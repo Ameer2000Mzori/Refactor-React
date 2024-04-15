@@ -6,7 +6,7 @@ const UseStateHook = () => {
 
   return (
     <>
-      <StyledTitle>this is useState</StyledTitle>
+      <StyledTitle>UseState</StyledTitle>
       <div>
         <StyledButton onClick={() => setCount((p) => (p += 1))}>
           increment

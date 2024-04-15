@@ -30,7 +30,8 @@ export const StyledTitle = styled.p`
 `
 
 export const StyledButton = styled.button`
-  width: 75px;
+  min-width: 75px;
+  max-width: 150px;
   margin: 2px;
   height: 32px;
   border-radius: 5px;
@@ -40,4 +41,5 @@ export const StyledButton = styled.button`
   font-weight: 600;
   border: none;
   cursor: pointer;
+  padding: 1px;
 `
