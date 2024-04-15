@@ -1,6 +1,6 @@
 import React from 'react'
 import UseStateHook from './components/UseStateHook.jsx'
-import { StyledDiv } from './StyledComponent.jsx'
+import { StyledDiv, StyledHooksWrapper } from '../../shared/StyledComponent.jsx'
 
 const HooksPage = () => {
   return (
@@ -10,9 +10,9 @@ const HooksPage = () => {
       </div>
 
       <div className=" w-[90%] h-[90%] flex flex-row text-start items-start justify-start">
-        <div>
+        <StyledHooksWrapper>
           <UseStateHook />
-        </div>
+        </StyledHooksWrapper>
       </div>
     </StyledDiv>
   )
