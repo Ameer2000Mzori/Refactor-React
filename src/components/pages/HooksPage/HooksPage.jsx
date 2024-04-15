@@ -1,11 +1,10 @@
 import React from 'react'
-import UseStateHook from './components/UseStateHook.jsx'
 import {
   StyledDiv,
   StyledHooksWrapper,
   StyledTitle,
 } from '../../shared/StyledComponent.jsx'
-import UseRefHook from './components/UseRefHook.jsx'
+import { HooksList } from './components/HooksListData.js'
 
 const HooksPage = () => {
   return (
@@ -15,12 +14,14 @@ const HooksPage = () => {
       </div>
 
       <div className=" w-[90%] h-[90%] flex flex-row text-start items-start justify-start gap-[15px]">
-        <StyledHooksWrapper>
-          <UseStateHook />
-        </StyledHooksWrapper>
-        <StyledHooksWrapper>
-          <UseRefHook />
-        </StyledHooksWrapper>
+        {HooksList.map((item, index) => {
+          const Component = item.component // Extracting component reference
+          return (
+            <StyledHooksWrapper key={index}>
+              <Component />
+            </StyledHooksWrapper>
+          )
+        })}
       </div>
     </StyledDiv>
   )
