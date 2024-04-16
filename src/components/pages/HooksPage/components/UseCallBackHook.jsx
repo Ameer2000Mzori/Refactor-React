@@ -13,7 +13,7 @@ const UseCallBack = () => {
       <div>
         <StyledButton
           onClick={() => {
-            setUserName(Math.trunc(Math.random() * 10) + 1)
+            setUserName(Math.trunc(Math.random() * 100) + 1)
           }}
         >
           restate callback
