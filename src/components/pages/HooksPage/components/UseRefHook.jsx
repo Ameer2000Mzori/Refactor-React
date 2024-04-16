@@ -14,7 +14,7 @@ const UseRefHook = () => {
 
   return (
     <>
-      <StyledTitle>Use Ref</StyledTitle>
+      <StyledTitle>UseRef</StyledTitle>
       <StyledButton className="w-[150px]" ref={buttonRef} onClick={changeColor}>
         Change Color
       </StyledButton>

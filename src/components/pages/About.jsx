@@ -1,7 +1,8 @@
 import React from 'react'
+import { StyledDiv } from '../shared/StyledComponent'
 
 const About = () => {
-  return <div>About</div>
+  return <StyledDiv>About</StyledDiv>
 }
 
 export default About

@@ -1,8 +1,9 @@
 import React from 'react'
+import { StyledDiv } from '../shared/StyledComponent'
 
 const Home = () => {
   return (
-    <div>
+    <StyledDiv>
       <p>
         hello there welcome this project is foucsed on learning and relearning
         everything in reactjs
@@ -13,7 +14,7 @@ const Home = () => {
           react-redux-toolkit
         </h1>
       </div>
-    </div>
+    </StyledDiv>
   )
 }
 
