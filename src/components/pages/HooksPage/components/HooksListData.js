@@ -1,6 +1,7 @@
 import UseStateHook from './UseStateHook.jsx'
 import UseRefHook from './UseRefHook.jsx'
 import UseEffectHook from './UseEffectHook.jsx'
+import UseCallBack from './UseCallBack.jsx'
 
 export const HooksList = [
   {
@@ -11,5 +12,8 @@ export const HooksList = [
   },
   {
     component: UseEffectHook,
+  },
+  {
+    component: UseCallBack,
   },
 ]
