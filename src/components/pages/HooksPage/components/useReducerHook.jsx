@@ -4,7 +4,11 @@ import { StyledButton, StyledTitle } from '../../../shared/StyledComponent'
 const reducer = (state, action) => {
   if (action.type === 'CALL_NAME') {
     console.log(action.payload)
-    return state
+    return state + ' hello'
+  }
+  if (action.type === 'REST_NAME') {
+    console.log(action.payload)
+    return action.payload
   }
   console.log('There is no name input')
   return state
@@ -18,12 +22,20 @@ const useReducerHook = () => {
     dispatch({ type: 'CALL_NAME', payload: userName })
   }
 
+  const restName = (userName) => {
+    dispatch({ type: 'REST_NAME', payload: userName })
+  }
+
   return (
     <>
       <StyledTitle>useReducer</StyledTitle>
-
-      <StyledButton onClick={() => changeName(newName)}>rest</StyledButton>
-      <StyledTitle>{newName}</StyledTitle>
+      <div>
+        <StyledButton onClick={() => changeName(newName)}>
+          add hello
+        </StyledButton>
+        <StyledButton onClick={() => restName('test name')}>rest</StyledButton>
+      </div>
+      <StyledTitle>{state}</StyledTitle>
     </>
   )
 }
