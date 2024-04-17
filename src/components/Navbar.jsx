@@ -17,6 +17,9 @@ const Navbar = () => {
           <li>
             <Link to="/reactquery">ReactQuery</Link>
           </li>
+          <li>
+            <Link to="/redux">Redux</Link>
+          </li>
         </ul>
       </nav>
     </>

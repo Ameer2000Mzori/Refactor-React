@@ -4,7 +4,7 @@ import About from './components/pages/About.jsx'
 import Navbar from './components/Navbar.jsx'
 import HooksPage from './components/pages/HooksPage/HooksPage.jsx'
 import ListImages from './components/pages/ReactQueryPage/ListImages.jsx'
-
+import ReduxToolKit from './components/pages/ReduxToolKit/ReduxToolKit.jsx'
 function App() {
   return (
     <Router>
@@ -16,6 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/hooks" element={<HooksPage />} />
         <Route path="/reactquery" element={<ListImages />} />
+        <Route path="/redux" element={<ReduxToolKit />} />
       </Routes>
     </Router>
   )
