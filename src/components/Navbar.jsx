@@ -14,6 +14,9 @@ const Navbar = () => {
           <li>
             <Link to="/hooks">Hooks</Link>
           </li>
+          <li>
+            <Link to="/reactquery">ReactQuery</Link>
+          </li>
         </ul>
       </nav>
     </>
